@@ -1,0 +1,17 @@
+/*
+- Мини ВК
+    - Авторизация, регистрация
+    - Стена
+    - Взаимоотношения
+        - Заявка в друзья
+        - Принятие и отклонение дружбы
+*/
+
+> composer global require laravel/installer
+> laravel new minivk.me
+> composer require laravel/breeze
+> php artisan breeze:install
+> php artisan migrate
+> php artisan make:controller PostController -r -m Post
+> php artisan make:migration create_posts_table
+> php artisan make:migration add_image_path_to_posts_table
